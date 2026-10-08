@@ -1,0 +1,576 @@
+:root {
+  /* Tema Gelap Modern (Default) */
+  --warna-latar-utama: #0b0f19;
+  --warna-latar-sekunder: #111827;
+  --warna-kartu: #1f2937;
+  --warna-teks-utama: #f9fafb;
+  --warna-teks-sekunder: #9ca3af;
+  --warna-utama: #0ea5e9;
+  --warna-utama-hover: #0284c7;
+  --warna-bingkai: #374151;
+  --warna-instagram: #e1306c;
+  --warna-github: #4b5563;
+  --warna-linkedin: #0a66c2;
+  
+  --font-utama: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --transisi-halus: all 0.3s ease;
+}
+
+/* Tema Terang */
+[data-tema="light"] {
+  --warna-latar-utama: #f8fafc;
+  --warna-latar-sekunder: #ffffff;
+  --warna-kartu: #ffffff;
+  --warna-teks-utama: #0f172a;
+  --warna-teks-sekunder: #64748b;
+  --warna-utama: #0284c7;
+  --warna-utama-hover: #0369a1;
+  --warna-bingkai: #e2e8f0;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-utama);
+}
+
+body {
+  background-color: var(--warna-latar-utama);
+  color: var(--warna-teks-utama);
+  line-height: 1.6;
+  transition: var(--transisi-halus);
+}
+
+.wadah-konten {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   HEADER & NAVBAR
+   ========================================================================== */
+.kepala-halaman {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(17, 24, 39, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--warna-bingkai);
+  padding: 1.2rem 0;
+  transition: var(--transisi-halus);
+}
+
+[data-tema="light"] .kepala-halaman {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.navigasi-wadah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nama {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--warna-teks-utama);
+  text-decoration: none;
+}
+
+.logo-nama span {
+  color: var(--warna-utama);
+}
+
+.menu-navigasi {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.daftar-navigasi {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.tautan-navigasi {
+  color: var(--warna-teks-sekunder);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transisi-halus);
+}
+
+.tautan-navigasi:hover {
+  color: var(--warna-utama);
+}
+
+/* Tombol Fitur Tema & Bahasa */
+.grup-tombol-fitur {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.tombol-tema,
+.tombol-bahasa {
+  background-color: var(--warna-kartu);
+  color: var(--warna-teks-utama);
+  border: 1px solid var(--warna-bingkai);
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: var(--transisi-halus);
+}
+
+.tombol-tema:hover,
+.tombol-bahasa:hover {
+  border-color: var(--warna-utama);
+  color: var(--warna-utama);
+}
+
+/* Hamburger Mobile Button */
+.tombol-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.garis-hamburger {
+  width: 100%;
+  height: 2px;
+  background-color: var(--warna-teks-utama);
+  border-radius: 2px;
+  transition: var(--transisi-halus);
+}
+
+/* ==========================================================================
+   SECTION TENTANG SAYA & FOTO
+   ========================================================================== */
+.bagian-tentang {
+  padding: 5rem 0 4rem;
+}
+
+.wadah-tentang {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.bingkai-foto {
+  flex-shrink: 0;
+}
+
+.foto-profil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--warna-utama);
+  box-shadow: 0 8px 24px rgba(14, 165, 233, 0.25);
+}
+
+.lencana-status {
+  display: inline-block;
+  background-color: var(--warna-utama);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+}
+
+.nama-lengkap {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+
+.nama-sekolah {
+  font-size: 1.2rem;
+  color: var(--warna-utama);
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.deskripsi-diri {
+  color: var(--warna-teks-sekunder);
+  font-size: 1.05rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Sosial Media */
+.sosial-media-wadah {
+  background-color: var(--warna-latar-sekunder);
+  padding: 1.2rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid var(--warna-bingkai);
+}
+
+.judul-sosmed {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+.tautan-sosmed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tombol-sosmed {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: var(--transisi-halus);
+}
+
+.tombol-sosmed.instagram { background-color: var(--warna-instagram); }
+.tombol-sosmed.github { background-color: var(--warna-github); }
+.tombol-sosmed.linkedin { background-color: var(--warna-linkedin); }
+
+.tombol-sosmed:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   SECTION PROYEK (GRID 4 KARTU)
+   ========================================================================== */
+.bagian-proyek {
+  padding: 5rem 0;
+  background-color: var(--warna-latar-sekunder);
+  border-top: 1px solid var(--warna-bingkai);
+  border-bottom: 1px solid var(--warna-bingkai);
+}
+
+.judul-bagian {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.judul-bagian h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.judul-bagian p {
+  color: var(--warna-teks-sekunder);
+  font-size: 1rem;
+}
+
+/* Layout Grid Proyek */
+.wadah-proyek {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.kartu-proyek {
+  background-color: var(--warna-kartu);
+  border: 1px solid var(--warna-bingkai);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transisi-halus);
+}
+
+.kartu-proyek:hover {
+  transform: translateY(-6px);
+  border-color: var(--warna-utama);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.gambar-proyek-wadah {
+  width: 100%;
+  height: 180px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.gambar-proyek {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: var(--transisi-halus);
+}
+
+.kartu-proyek:hover .gambar-proyek {
+  transform: scale(1.05);
+  filter: brightness(1.05);
+}
+
+.isi-kartu {
+  padding: 1.5rem;
+}
+
+.nama-mapel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--warna-utama);
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.judul-proyek {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.deskripsi-proyek {
+  font-size: 0.92rem;
+  color: var(--warna-teks-sekunder);
+  line-height: 1.6;
+}
+
+.kaki-kartu {
+  padding: 0 1.5rem 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag-teknologi {
+  font-size: 0.75rem;
+  background-color: var(--warna-latar-utama);
+  color: var(--warna-teks-utama);
+  border: 1px solid var(--warna-bingkai);
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   MODAL POP-UP PREVIEW GAMBAR FULLSCREEN
+   ========================================================================== */
+.modal-gambar-overlay {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(8px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.isi-gambar-modal {
+  max-width: 95%;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  object-fit: contain; /* Gambar melebar penuh secara proporsional tanpa terpotong */
+  animation: zoomMasuk 0.3s ease;
+}
+
+.keterangan-gambar {
+  margin-top: 1rem;
+  color: #f3f4f6;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tombol-tutup-gambar {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.tombol-tutup-gambar:hover {
+  color: var(--warna-utama);
+}
+
+@keyframes zoomMasuk {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ==========================================================================
+   SECTION KONTAK FORM
+   ========================================================================== */
+.bagian-kontak {
+  padding: 5rem 0;
+}
+
+.wadah-formulir {
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: var(--warna-latar-sekunder);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--warna-bingkai);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.grup-input {
+  margin-bottom: 1.4rem;
+}
+
+.grup-input label {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.grup-input input,
+.grup-input textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--warna-latar-utama);
+  color: var(--warna-teks-utama);
+  border: 1px solid var(--warna-bingkai);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: var(--transisi-halus);
+}
+
+.grup-input input:focus,
+.grup-input textarea:focus {
+  outline: none;
+  border-color: var(--warna-utama);
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.15);
+}
+
+.tombol-kirim {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: var(--warna-utama);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transisi-halus);
+}
+
+.tombol-kirim:hover {
+  background-color: var(--warna-utama-hover);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.kaki-halaman {
+  background-color: var(--warna-latar-sekunder);
+  border-top: 1px solid var(--warna-bingkai);
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--warna-teks-sekunder);
+}
+
+.email-footer {
+  margin-top: 0.4rem;
+  font-weight: 500;
+  color: var(--warna-utama);
+}
+
+/* ==========================================================================
+   RESPONSIF MOBILE (@media max-width: 600px)
+   ========================================================================== */
+@media (max-width: 600px) {
+  .tombol-hamburger {
+    display: flex;
+  }
+
+  .menu-navigasi {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--warna-latar-sekunder);
+    flex-direction: column;
+    padding: 1.8rem 0;
+    border-bottom: 1px solid var(--warna-bingkai);
+    display: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .menu-navigasi.aktif {
+    display: flex;
+  }
+
+  .daftar-navigasi {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .tombol-hamburger.aktif .garis-hamburger:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .tombol-hamburger.aktif .garis-hamburger:nth-child(2) {
+    opacity: 0;
+  }
+  .tombol-hamburger.aktif .garis-hamburger:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+  .wadah-tentang {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .foto-profil {
+    width: 160px;
+    height: 160px;
+  }
+
+  .nama-lengkap {
+    font-size: 2rem;
+  }
+
+  .tautan-sosmed {
+    justify-content: center;
+  }
+
+  .wadah-proyek {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .wadah-formulir {
+    padding: 1.5rem;
+  }
+}

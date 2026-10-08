@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id" data-tema="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Pribadi Althaf Nail Hanafi - Siswa SMK Krian 1 Jurusan RPL">
+    <title>Portofolio - Althaf Nail Hanafi | SMK Krian 1</title>
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="kepala-halaman">
+        <div class="wadah-konten navigasi-wadah">
+            <a href="#" class="logo-nama">
+                Althaf<span>.RPL</span>
+            </a>
+
+            <!-- Tombol Hamburger Mobile -->
+            <button class="tombol-hamburger" id="tombol-hamburger" aria-label="Buka Menu">
+                <span class="garis-hamburger"></span>
+                <span class="garis-hamburger"></span>
+                <span class="garis-hamburger"></span>
+            </button>
+
+            <!-- Menu Navigasi -->
+            <nav class="menu-navigasi" id="menu-navigasi">
+                <ul class="daftar-navigasi">
+                    <li><a href="#home" class="tautan-navigasi" data-id="Beranda" data-en="Home">Beranda</a></li>
+                    <li><a href="#tentang-saya" class="tautan-navigasi" data-id="Tentang Saya" data-en="About Me">Tentang Saya</a></li>
+                    <li><a href="#keahlian-saya" class="tautan-navigasi" data-id="Keahlian" data-en="Skills">Keahlian</a></li>
+                    <li><a href="#proyek-saya" class="tautan-navigasi" data-id="Proyek Saya" data-en="My Projects">Proyek Saya</a></li>
+                    <li><a href="#kontak-saya" class="tautan-navigasi" data-id="Kontak" data-en="Contact">Kontak</a></li>
+                </ul>
+
+                <!-- Tombol Interaksi: Tema & Bahasa -->
+                <div class="grup-tombol-fitur">
+                    <button class="tombol-tema" id="tombol-tema" aria-label="Ganti Tema">
+                        <span class="ikon-tema" id="ikon-tema">🌙</span>
+                    </button>
+                    <button class="tombol-bahasa" id="tombol-bahasa" aria-label="Ganti Bahasa">
+                        <span id="teks-bahasa">EN</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Home / Utama -->
+        <section id="home" class="bagian-tentang">
+            <div class="wadah-konten wadah-tentang">
+                <!-- Foto Profil -->
+                <div class="bingkai-foto">
+                    <img src="profil.png" alt="Foto Althaf Nail Hanafi" class="foto-profil" onerror="this.src='https://via.placeholder.com/200?text=Foto+Althaf';">
+                </div>
+
+                <div class="teks-tentang">
+                    <span class="lencana-status" data-id="Siswa SMK X PPLG" data-en="Student X PPLG">Siswa SMK X PPLG</span>
+                    <h1 class="nama-lengkap">Althaf Nail Hanafi</h1>
+                    <h2 class="nama-sekolah">SMK Krian 1 - Sidoarjo, Jawa Timur</h2>
+                    
+                    <p class="deskripsi-diri" data-id="Halo! Saya adalah siswa kelas X PPLG (RPL) di SMK Krian 1 Sidoarjo. Selamat datang di portofolio digital saya!" data-en="Hello! I am a 10th-grade Software Engineering student at SMK Krian 1 Sidoarjo. Welcome to my digital portfolio!">
+                        Halo! Saya adalah siswa kelas X PPLG (RPL) di SMK Krian 1 Sidoarjo. Selamat datang di portofolio digital saya!
+                    </p>
+
+                    <!-- Sosial Media -->
+                    <div class="sosial-media-wadah">
+                        <h3 class="judul-sosmed" data-id="Hubungi & Ikuti Saya:" data-en="Connect with me:">Hubungi & Ikuti Saya:</h3>
+                        <div class="tautan-sosmed">
+                            <a href="https://www.instagram.com/igwt________?stkn=MTJ6cDQwaTNzbDU5Mw==" target="_blank" class="tombol-sosmed instagram" rel="noopener">
+                                📷 Instagram
+                            </a>
+                            <a href="https://github.com" target="_blank" class="tombol-sosmed github" rel="noopener">
+                                💻 GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/althaf-nail-hanafi-268903385" target="_blank" class="tombol-sosmed linkedin" rel="noopener">
+                                💼 LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Tentang Saya Khusus -->
+        <section id="tentang-saya" class="bagian-kontak" style="background-color: var(--warna-latar-sekunder); border-top: 1px solid var(--warna-bingkai);">
+            <div class="wadah-konten">
+                <div class="judul-bagian">
+                    <h2 data-id="Tentang Saya" data-en="About Me">Tentang <span>Saya</span></h2>
+                    <p style="font-weight: 600; font-size: 1.1rem; color: var(--warna-utama);" data-id="Pelajar & Pembelajar Kreatif" data-en="Student & Creative Learner">Pelajar & Pembelajar Kreatif</p>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center; color: var(--warna-teks-sekunder); line-height: 1.8;">
+                    <p data-id="Halo! Nama saya Althaf Nail Hanafi. Saya adalah seseorang yang memiliki semangat untuk belajar dan mencoba berbagai hal baru di bidang teknologi dan rekayasa perangkat lunak." data-en="Hello! My name is Althaf Nail Hanafi. I am passionate about learning and trying new things in technology and software engineering.">
+                        Halo! Nama saya Althaf Nail Hanafi. Saya adalah seseorang yang memiliki semangat untuk belajar dan mencoba berbagai hal baru di bidang teknologi dan rekayasa perangkat lunak.
+                    </p>
+                    <br>
+                    <p data-id="Saya tertarik dengan pemrograman web, logika terstruktur Python, serta konsep Pemrograman Berorientasi Objek (PBO) menggunakan Java. Saya percaya bahwa setiap latihan dan proyek adalah kesempatan terbaik untuk berkembang." data-en="I am interested in web development, structured logic in Python, and Object-Oriented Programming (OOP) using Java. I believe every practice and project is the best opportunity to grow.">
+                        Saya tertarik dengan pemrograman web, logika terstruktur Python, serta konsep Pemrograman Berorientasi Objek (PBO) menggunakan Java. Saya percaya bahwa setiap latihan dan proyek adalah kesempatan terbaik untuk berkembang.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Keahlian Saya -->
+        <section id="keahlian-saya" class="bagian-proyek">
+            <div class="wadah-konten">
+                <div class="judul-bagian">
+                    <h2 data-id="Keahlian Saya" data-en="My Skills">Keahlian <span>Saya</span></h2>
+                    <p data-id="Teknologi dan bahasa pemrograman yang sedang saya pelajari." data-en="Technologies and programming languages I am currently learning.">Teknologi dan bahasa pemrograman yang sedang saya pelajari.</p>
+                </div>
+
+                <div class="wadah-proyek" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+                    <div class="kartu-proyek" style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🌐</div>
+                        <h3 class="judul-proyek">HTML5</h3>
+                        <p class="deskripsi-proyek" data-id="Membuat struktur website yang rapi, semantik, dan terstruktur." data-en="Creating neat, semantic, and well-structured website layouts.">Membuat struktur website yang rapi, semantik, dan terstruktur.</p>
+                    </div>
+
+                    <div class="kartu-proyek" style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🎨</div>
+                        <h3 class="judul-proyek">CSS3</h3>
+                        <p class="deskripsi-proyek" data-id="Membuat tampilan website yang menarik, modern, dan responsive." data-en="Designing attractive, modern, and responsive web interfaces.">Membuat tampilan website yang menarik, modern, dan responsive.</p>
+                    </div>
+
+                    <div class="kartu-proyek" style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">⚡</div>
+                        <h3 class="judul-proyek">JavaScript</h3>
+                        <p class="deskripsi-proyek" data-id="Membuat website menjadi lebih interaktif dan dinamis." data-en="Making websites more interactive and dynamic.">Membuat website menjadi lebih interaktif dan dinamis.</p>
+                    </div>
+
+                    <div class="kartu-proyek" style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🐍</div>
+                        <h3 class="judul-proyek">Python</h3>
+                        <p class="deskripsi-proyek" data-id="Menguasai logika terstruktur dan dasar pemrograman berorientasi objek." data-en="Mastering structured logic and basic object-oriented programming.">Menguasai logika terstruktur dan dasar pemrograman berorientasi objek.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Proyek Saya (4 Proyek Utama) -->
+        <section id="proyek-saya" class="bagian-proyek" style="background-color: var(--warna-latar-sekunder); border-top: 1px solid var(--warna-bingkai);">
+            <div class="wadah-konten">
+                <div class="judul-bagian">
+                    <h2 data-id="Proyek & Tugas Keahlian" data-en="Projects & Practical Tasks">Proyek & Tugas Keahlian</h2>
+                    <p data-id="Berikut adalah 4 proyek utama yang saya kerjakan selama menempuh pembelajaran di SMK Krian 1." data-en="Here are 4 major projects I completed during my studies at SMK Krian 1.">Berikut adalah 4 proyek utama yang saya kerjakan selama menempuh pembelajaran di SMK Krian 1.</p>
+                </div>
+
+                <div class="wadah-proyek">
+                    <!-- Kartu Proyek 1: PT -->
+                    <article class="kartu-proyek">
+                        <div class="gambar-proyek-wadah">
+                            <img src="projectpt.jpg" alt="Kalkulator Sederhana Python" class="gambar-proyek" onerror="this.src='https://via.placeholder.com/400x200?text=Kalkulator+Python';">
+                        </div>
+                        <div class="isi-kartu">
+                            <span class="nama-mapel">PT (PEMROGRAMAN TERSTRUKTUR)</span>
+                            <h3 class="judul-proyek" data-id="Kalkulator Sederhana Python" data-en="Simple Python Calculator">Kalkulator Sederhana Python</h3>
+                            <p class="deskripsi-proyek" data-id="Program berbasis Python untuk melakukan operasi aritmatika dasar (penjumlahan, pengurangan, perkalian, pembagian) dengan penerapan fungsi modular dan percabangan logika yang terstruktur." data-en="A Python-based program to perform basic arithmetic operations (addition, subtraction, multiplication, division) utilizing modular functions and structured conditional logic.">
+                                Program berbasis Python untuk melakukan operasi aritmatika dasar (penjumlahan, pengurangan, perkalian, pembagian) dengan penerapan fungsi modular dan percabangan logika yang terstruktur.
+                            </p>
+                        </div>
+                        <div class="kaki-kartu">
+                            <span class="tag-teknologi">Python 3</span>
+                            <span class="tag-teknologi">Logika CLI</span>
+                        </div>
+                    </article>
+
+                    <!-- Kartu Proyek 2: PBO -->
+                    <article class="kartu-proyek">
+                        <div class="gambar-proyek-wadah">
+                            <img src="projectpbo.png" alt="Project Mini Kasir" class="gambar-proyek" onerror="this.src='https://via.placeholder.com/400x200?text=Mini+Kasir+PBO';">
+                        </div>
+                        <div class="isi-kartu">
+                            <span class="nama-mapel">PBO (PEMROGRAMAN BERORIENTASI OBJEK)</span>
+                            <h3 class="judul-proyek" data-id="Aplikasi Mini Kasir OOP" data-en="Mini Cashier OOP Application">Aplikasi Mini Kasir OOP</h3>
+                            <p class="deskripsi-proyek" data-id="Implementasi konsep Pemrograman Berorientasi Objek (Class, Object, Encapsulation) untuk mengelola transaksi belanja, perhitungan total harga, diskon, dan kembalian secara otomatis." data-en="Implementation of Object-Oriented Programming concepts (Class, Object, Encapsulation) to manage shopping transactions, calculate total price, discounts, and change automatically.">
+                                Implementasi konsep Pemrograman Berorientasi Objek (Class, Object, Encapsulation) untuk mengelola transaksi belanja, perhitungan total harga, diskon, dan kembalian secara otomatis.
+                            </p>
+                        </div>
+                        <div class="kaki-kartu">
+                            <span class="tag-teknologi">Java / Python</span>
+                            <span class="tag-teknologi">OOP Concept</span>
+                        </div>
+                    </article>
+
+                    <!-- Kartu Proyek 3: KKD -->
+                    <article class="kartu-proyek">
+                        <div class="gambar-proyek-wadah">
+                            <img src="projectkkd.jpg" alt="Logo Desain KKD" class="gambar-proyek" onerror="this.src='https://via.placeholder.com/400x200?text=Logo+Desain';">
+                        </div>
+                        <div class="isi-kartu">
+                            <span class="nama-mapel">KKD (KECAKAPAN KERJA DASAR)</span>
+                            <h3 class="judul-proyek" data-id="Desain Identitas Visual Logo" data-en="Visual Identity Logo Design">Desain Identitas Visual Logo</h3>
+                            <p class="deskripsi-proyek" data-id="Karya desain grafis digital yang berfokus pada estetika tipografi, keselarasan komposisi warna, serta penerapan prinsip dasar tata letak UI/UX untuk sebuah brand fiktif." data-en="Digital graphic design work focusing on typography aesthetics, color composition harmony, and the application of basic UI/UX layout principles for a fictional brand.">
+                                Karya desain grafis digital yang berfokus pada estetika tipografi, keselarasan komposisi warna, serta penerapan prinsip dasar tata letak UI/UX untuk sebuah brand fiktif.
+                            </p>
+                        </div>
+                        <div class="kaki-kartu">
+                            <span class="tag-teknologi">Desain Grafis</span>
+                            <span class="tag-teknologi">Visual Branding</span>
+                        </div>
+                    </article>
+
+                    <!-- Kartu Proyek 4: TJK -->
+                    <article class="kartu-proyek">
+                        <div class="gambar-proyek-wadah">
+                            <img src="projecttjk.jpg" alt="Computer Assembly TJK" class="gambar-proyek" onerror="this.src='https://via.placeholder.com/400x200?text=Computer+Assembly';">
+                        </div>
+                        <div class="isi-kartu">
+                            <span class="nama-mapel">TJK (TEKNIK JARINGAN KOMPUTER)</span>
+                            <h3 class="judul-proyek" data-id="Perakitan Komputer (Computer Assembly)" data-en="Computer Assembly & Hardware">Perakitan Komputer (Computer Assembly)</h3>
+                            <p class="deskripsi-proyek" data-id="Praktikum instalasi perangkat keras komputer (Motherboard, Processor, RAM, Power Supply), manajemen kabel yang rapi, serta pengujian sistem operasi dasar." data-en="Practicum on computer hardware installation (Motherboard, Processor, RAM, Power Supply), neat cable management, and basic operating system testing.">
+                                Praktikum instalasi perangkat keras komputer (Motherboard, Processor, RAM, Power Supply), manajemen kabel yang rapi, serta pengujian sistem operasi dasar.
+                            </p>
+                        </div>
+                        <div class="kaki-kartu">
+                            <span class="tag-teknologi">Hardware</span>
+                            <span class="tag-teknologi">Troubleshooting</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Kontak Saya -->
+        <section id="kontak-saya" class="bagian-kontak">
+            <div class="wadah-konten">
+                <div class="judul-bagian">
+                    <h2 data-id="Hubungi Saya" data-en="Get in Touch">Hubungi Saya</h2>
+                    <p data-id="Silakan kirim pesan jika ingin berdiskusi atau menanyakan informasi lebih lanjut." data-en="Feel free to send a message for questions or further discussions.">Silakan kirim pesan jika ingin berdiskusi atau menanyakan informasi lebih lanjut.</p>
+                </div>
+
+                <div class="wadah-formulir">
+                    <form class="formulir-kontak" id="formulir-kontak">
+                        <div class="grup-input">
+                            <label for="input-nama" data-id="Nama lengkap" data-en="Full name">Nama lengkap</label>
+                            <input type="text" id="input-nama" name="nama" placeholder="Masukkan nama Anda..." required>
+                        </div>
+
+                        <div class="grup-input">
+                            <label for="input-email" data-id="Alamat email" data-en="Email address">Alamat email</label>
+                            <input type="email" id="input-email" name="email" placeholder="nama@email.com" required>
+                        </div>
+
+                        <div class="grup-input">
+                            <label for="input-pesan" data-id="Pesan / Diskusi Proyek" data-en="Message / Project Discussion">Pesan / Diskusi Proyek</label>
+                            <textarea id="input-pesan" name="pesan" rows="5" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="tombol-kirim" id="tombol-kirim" data-id="Kirim Pesan" data-en="Send Message">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="kaki-halaman">
+        <div class="wadah-konten isi-kaki">
+            <p>&copy; 2026 Althaf Nail Hanafi - SMK Krian 1 Sidoarjo (PPLG)</p>
+            <p class="email-footer">Email: althafnailhanafi13@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- Modal Pop-Up Gambar Fullscreen -->
+    <div id="modal-gambar" class="modal-gambar-overlay">
+        <span class="tombol-tutup-gambar" id="tutup-gambar">&times;</span>
+        <img class="isi-gambar-modal" id="gambar-preview-fokus" alt="Preview Gambar Proyek">
+        <div id="teks-keterangan-gambar" class="keterangan-gambar"></div>
+    </div>
+
+</body>
+</html>
